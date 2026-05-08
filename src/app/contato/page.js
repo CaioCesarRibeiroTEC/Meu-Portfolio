@@ -6,7 +6,7 @@ import * as S from './styles';
 import { FaLinkedin, FaEnvelope, FaWhatsapp, FaPaperPlane, FaTrash, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
-const socket = io('http://localhost:3001');
+const socket = io('http://192.168.1.10:3002');
 
 export default function Contato() {
   const router = useRouter();
@@ -43,13 +43,14 @@ export default function Contato() {
           setUserName(loadedName);
           setChatStage('active');
           setCurrentOptions([
-            { label: "Fale da sua experiência" }, 
-            { label: "Quais são seus projetos?" },
-            { label: "Quais tecnologias você usa?" }
+            {label: "Fale da sua experiência"}, 
+            {label: "Quais são seus projetos?"},
+            {label: "Quais tecnologias você usa?"},
+            {label: "Falar com o Caio"}
           ]);
-          socket.emit('start_session', { userName: loadedName, history: loadedHistory });
-          
-          saveSessionToMemory(loadedHistory, loadedName);
+          socket.emit('start_session', { userName: capturedName, history: newHistory });
+          saveSessionToMemory(newHistory, capturedName);
+          return;
         } else {
           startWelcomeSequence();
         }

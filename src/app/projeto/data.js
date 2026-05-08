@@ -10,7 +10,7 @@ export const myProjects = {
       description: "E-commerce completo com banco de dados PostgreSQL, chat integrado para suporte e painel administrativo.",
       thumb: "/assets/projeto(CH).png",
       thumbMobile: "/assets/thumbMobile(CH).png", 
-      url: "https://charmosa-cosmeticos.vercel.app/",
+      url: "https://charmosa-cosmeticos-xmlb.vercel.app/",
 
       techContent: (
         <div className="tech-grid">
@@ -76,7 +76,7 @@ export const myProjects = {
           <div className="tech-item">
             <h4>Diferencial de UX & Negócios</h4>
             <p style={{ color: '#aaa', fontSize: '0.9rem', lineHeight: '1.5' }}>
-              &emsp;Foco na retenção através de modais dinâmicos e uma interface que reflete a identidade da marca, facilitando a navegação e o fechamento da venda.
+              &emsp;Desenvolvi a plataforma digital da Rodríguez Sanduicheria com um foco estratégico em conversão e experiência do usuário (UX). Construí o front-end utilizando Next.js e React, criando uma vitrine virtual intuitiva onde o cliente visualiza, seleciona e fecha o pedido de forma rápida. Implementei uma gestão de estado eficiente com Context API e Styled Components para garantir que o menu, desde os lanches até as bebidas, seja navegado sem atrito. O meu diferencial neste projeto foi aplicar minha vivência em atendimento direto ao cliente para desenhar um fluxo que minimiza a fricção, utilizando o WhatsApp como canal de fechamento, o que otimiza o tempo do cliente e garante que a sanduicheria foque no que realmente importa: a entrega. É um projeto que une a robustez técnica do desenvolvimento com a sensibilidade comercial de quem entende o negócio por trás do código..
             </p>
           </div>
         </div>

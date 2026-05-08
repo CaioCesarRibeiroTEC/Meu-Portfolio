@@ -30,11 +30,12 @@ export default function Beginning() {
         <div className='links-container'>
 
           <span>Meus Contatos</span>
+            
+            <div className="links-area">
             <a href="https://linkedin.com/in/https://www.linkedin.com/in/caio-c%C3%A9sar-ribeiro-b07b46325/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
               <FaLinkedin />
             </a>
-            <div className="links-area">
-              <a href="https://wa.me/5562981904367" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+            <a href="https://wa.me/5562981904367" target="_blank" rel="noopener noreferrer" title="WhatsApp">
               <FaWhatsapp />
             </a>
             <a href="https://github.com/https://github.com/CaioCesarRibeiroTEC" target="_blank" rel="noopener noreferrer" title="GitHub">

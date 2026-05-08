@@ -209,8 +209,18 @@ export const TechSheet = styled.div`
   }
 
   .tech-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px; margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 900px) {
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px; margin-top: 30px;
+      justify-content: center;
+      align-items: start;
+
+    }
   }
 
   .tech-item {
@@ -245,3 +255,4 @@ export const ActionButton = styled.button`
 export const ProjectIframe = styled.iframe`
   flex: 1; width: 100%; border: none; background: #fff;
 `;
+
