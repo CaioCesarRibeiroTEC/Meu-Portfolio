@@ -6,7 +6,7 @@ import * as S from './styles';
 import { FaLinkedin, FaEnvelope, FaWhatsapp, FaPaperPlane, FaTrash, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
-const socket = io('http://192.168.1.10:3002');
+const socket = io(process.env.NEXT_PUBLIC_SOCKET_URL || 'http://localhost:3002');
 
 export default function Contato() {
   const router = useRouter();
