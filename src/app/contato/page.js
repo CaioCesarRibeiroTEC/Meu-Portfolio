@@ -43,10 +43,7 @@ export default function Contato() {
           setUserName(loadedName);
           setChatStage('active');
           setCurrentOptions([
-            {label: "Fale da sua experiência"}, 
-            {label: "Quais são seus projetos?"},
-            {label: "Quais tecnologias você usa?"},
-            {label: "Falar com o Caio"}
+
           ]);
           socket.emit('start_session', { userName: capturedName, history: newHistory });
           saveSessionToMemory(newHistory, capturedName);
