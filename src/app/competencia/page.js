@@ -34,7 +34,7 @@ export default function Competencias() {
             </S.DescriptionP>
 
             <S.DescriptionP onClick={(e) => e.stopPropagation()}>
-                &emsp;Ingresei de cabeça no mundo do desenvolvimento e, com muito empenho nos estudos e desafios práticos, me tornei um Desenvolvedor Web Full Stack. Hoje, uno a minha vivência de gestão e trabalho em equipe com código de alta qualidade, provando que a capacidade de se reinventar e entregar resultados de excelência é a minha maior marca
+                &emsp;Ingressei de cabeça no mundo do desenvolvimento e, com muito empenho nos estudos e desafios práticos, me tornei um Desenvolvedor Web Full Stack. Hoje, uno a minha vivência de gestão e trabalho em equipe com código de alta qualidade, provando que a capacidade de se reinventar e entregar resultados de excelência é a minha maior marca
             </S.DescriptionP>
         </>
       )
@@ -113,15 +113,15 @@ export default function Competencias() {
             onClick={() => setActiveCard(activeCard === index ? null : index)} 
           >
             <div className="content-wrapper">
-                <h2>{card.title}</h2>
-                
-                {activeCard === null && (
-                    <S.SeeMoreHint>Clique no card para ver mais </S.SeeMoreHint>
-                )}
+              <h2>{card.title}</h2>
+              
+              {activeCard === null && (
+                <S.SeeMoreHint>Clique no card para ver mais </S.SeeMoreHint>
+              )}
 
-                <S.ContentArea $isActive={activeCard === index} >
-                    {card.content}
-                </S.ContentArea>
+              <S.ContentArea $isActive={activeCard === index} >
+                {card.content}
+              </S.ContentArea>
 
             </div>
           </S.Card>

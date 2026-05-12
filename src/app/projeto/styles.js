@@ -23,7 +23,7 @@ export const Container = styled.section`
   }
 
   @media screen and (min-width: 1200px) {
-    width: 70%;
+    width: 80%;
   }
 `;
 
@@ -68,7 +68,7 @@ export const CardList = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 1px;
+  gap: 10px;
 
   @media screen and (min-width: 500px) and (max-width: 1000px) { 
 
@@ -96,7 +96,7 @@ export const ProjectCard = styled.div`
 
   .img-box {
     width: 150px;
-    height: 200px;
+    height: 165px;
     background: #222;
     border-radius: 16px;
 
@@ -111,7 +111,7 @@ export const ProjectCard = styled.div`
 
     @media (min-width: 700px) {
       width: 300px;
-      height: 190px;
+      height: 160px;
       background: #222;
     }
 
@@ -123,7 +123,7 @@ export const ProjectCard = styled.div`
 
   .info-box {
     width: 60%;
-    padding: 5px;
+    padding: 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,13 +132,13 @@ export const ProjectCard = styled.div`
 
     h3 { 
       color: #fff; 
-      font-size: 1.2rem; 
+      font-size: 1rem; 
       margin-bottom: 8px; 
       text-align: center;
     }
     p { 
       color: aqua; 
-      font-size: 0.85rem; 
+      font-size: 0.70rem; 
       line-height: 1.2; 
       text-align: center;
       
@@ -156,7 +156,7 @@ export const ProjectCard = styled.div`
   }
 
   @media (min-width: 700px) {
-    width: 70%; 
+    width: 80%; 
     align-self: ${({ $isEven }) => ($isEven ? 'flex-start' : 'flex-end')};
     
     .info-box {

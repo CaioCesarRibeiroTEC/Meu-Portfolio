@@ -29,14 +29,14 @@ export const TitleMobile = styled.span`
 `;
 
 export const CardsWrapper = styled.div`
-  flex: 1; /* Ocupa todo o espaço restante abaixo do título */
+  flex: 1; 
   display: flex;
   flex-direction: column;
   width: 90%;
   height: 100%;
-  gap: ${({ $isActive }) => ($isActive ? '5px' : '30px')};
+  gap: ${({ $isActive }) => ($isActive ? '5px' : '10px')};
   transition: all 0.6s cubic-bezier(1, 1, 0.50, 1);
-  margin-bottom: ${({ $isActive }) => ($isActive ? '20px' : '5px')};
+  margin-bottom: ${({ $isActive }) => ($isActive ? '20px' : '15px')};
 
 
   @media (min-width: 800px) {
@@ -46,7 +46,7 @@ export const CardsWrapper = styled.div`
 `;
 
 export const Card = styled.div`
-  flex: ${({ $isActive }) => ($isActive ? '30' : '1')};
+  flex: ${({ $isActive }) => ($isActive ? '10' : '1')};
   transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
   background: ${({ $bg }) => $bg || '#111111ad'};
   border-top: 1px solid ${({ $isActive }) => ($isActive ? '#00ffcc' : '#333')};
@@ -56,9 +56,9 @@ export const Card = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: ${({ $isActive }) => ($isActive ? '5px' : '5px 10px')};
+  padding: ${({ $isActive }) => ($isActive ? '10px' : '5px 10px')};
   border-radius: 15px;
-  opacity: ${({ $isActive }) => ($isActive ? '1' : '0.6')};
+  opacity: ${({ $isActive }) => ($isActive ? '0.6' : '0.8')};
 
 
   &:hover {
@@ -146,7 +146,7 @@ export const DescriptionP = styled.p`
     font-family: "Baskervville SC", system-ui;
     font-size: 18px;
     text-align: justify;
-    color: #fff;
+    color: #ff7d04;
     line-height: 1.5;
 
     @media (max-width: 750px) { 
